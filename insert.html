@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert Number To Array</title>
+</head>
+
+<body>
+<h3>Insert Number To Array</h3>
+<script>
+    let arr= [5,8,4,9,8,7,9]
+    let x = 6;
+    let size= arr.length;
+    let index= 3;
+    function insertNumberToArray( arr, x, index){
+        if (index<0 || index> arr.length){
+           return arr;
+        } else {
+            for (let i = arr.length - 1; i >= index - 1; i--) {
+                arr[i + 1] = arr[i];
+            }
+            
+            arr[index] = x;
+            return arr;
+                }   
+            }
+            let result = insertNumberToArray(arr, x, index);
+    document.write(result)
+          
+</script>
+</body>
+
+</html>

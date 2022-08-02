@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Average Mark In Array</title>
+</head>
+
+<body>
+<h3>Average Mark In Array</h3>
+    <script>
+        function findAvg(){
+        let arr = [5,6,3,8,6,9,4]
+        let aver= 0;
+        let size= arr.length;
+        for(let i=0; i< arr.length;i++){
+            document.write(arr[i] +" ")
+            aver+= arr[i];
+        }
+        return aver/size
+        }
+        let result = findAvg();
+        document.write("<br>"+ result)
+    </script>
+</body>
+
+</html>
